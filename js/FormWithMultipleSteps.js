@@ -5,16 +5,11 @@ function showTab(n) {
   // This function will display the specified tab of the form ...
   var x = document.getElementsByClassName("tab");
   x[n].style.display = "block";
-  // ... and fix the Previous/Next buttons:
-  if (n == 0) {
-    document.getElementById("prevBtn").style.display = "none";
-  } else {
-    document.getElementById("prevBtn").style.display = "inline";
-  }
+ 
   if (n == x.length - 1) {
-    document.getElementById("nextBtn").innerHTML = "Submit";
+    document.getElementById("nextBtn").innerHTML = "ارسل";
   } else {
-    document.getElementById("nextBtn").innerHTML = "Next";
+    document.getElementById("nextBtn").innerHTML = "التالي";
   }
   // ... and run a function that displays the correct step indicator:
   fixStepIndicator(n);
@@ -47,16 +42,25 @@ function validateForm() {
     valid = true;
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
-  // A loop that checks every input field in the current tab:
-  for (i = 0; i < y.length; i++) {
-    // If a field is empty...
-    if (y[i].value == "") {
-      // add an "invalid" class to the field:
-      y[i].className += " invalid";
-      // and set the current valid status to false:
-      valid = false;
-    }
+  console.log("y", y);
+ 
+  if (y[0].checked == false && y[1].checked == false) {
+    valid = false;
   }
+  if (y[2].checked == false && y[3].checked == false) {
+    valid = false;
+  }
+  if (y[4].checked == false && y[5].checked == false) {
+    valid = false;
+  }
+  if (y[6].checked == false && y[7].checked == false) {
+    valid = false;
+  }
+  if (y[8].checked == false && y[9].checked == false) {
+    valid = false;
+  }
+  
+
   // If the valid status is true, mark the step as finished and valid:
   if (valid) {
     document.getElementsByClassName("step")[currentTab].className += " finish";
