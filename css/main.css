@@ -4,12 +4,19 @@
 }
 body {
   font-family: "Cairo", sans-serif;
+  background-color: #314f6d;
+  overflow-x: hidden;
 }
-
-.bg-gray-color {
-  background-color: #b9bceb;
-  padding: 50px;
-  border-radius: 15px;
+.vh-80 {
+  height: 80vh;
+}
+.bg-black-color {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 55px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-radius: 30px;
+  color: #fff;
 }
 .bg-primer-color {
   background-color: #4e529e;
@@ -17,8 +24,13 @@ body {
   padding-bottom: 20px;
   border-radius: 15px;
 }
-.Home-bg {
-  background-image: url(../img/UniversityOfPalestine.png);
+.Home-text {
+  line-height: 2;
+}
+.Home-bg,
+.bg-tow {
+  background-image: url(../img/Repeat\ Grid\ 1.png);
+
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -26,8 +38,7 @@ body {
 }
 .Home-bg .Home-Wight-bg {
   background-color: rgba(253, 253, 253, 0.8);
-  /* height: 61.5vh;
-    width: 66vw; */
+
   border-radius: 20px;
   padding: 22px 40px;
 }
@@ -48,15 +59,20 @@ body {
 .Home-bg .Home-Wight-bg a li {
   padding-top: 20px;
 }
+.header-title {
+  font-family: "Roboto", sans-serif;
+}
+.btn-background {
+  background-color: #314f6d;
+  border: none;
+}
 /* End first pag */
 
 /* start questions pag */
-.bg-color {
-  background: linear-gradient(to right, #b9bceb, #4e529e);
-  height: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.d-R {
+  direction: rtl;
 }
+
 .data {
   position: relative;
   font-weight: bold;
@@ -182,5 +198,19 @@ input[type="radio"] {
 .m-20 {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+.mbti-img {
+  height: 56px;
+}
+.j-f {
+  justify-content: space-evenly;
+}
+
+@media (max-width: 720px) {
+  .j-f {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 /* End result pag */

@@ -17,31 +17,29 @@
 </head>
 
 <body>
-    <div class="bg-color">
+    <div class="bg-tow text-center">
         <div class="container">
-            <div class="row data text-right align-items-center justify-content-center vh-100">
-                <div class="bg-gray-color">
-                    <p>استخدم هذه الطريقة لحصول على التخصصات
+            <div class="row  text-right align-items-center justify-content-center vh-100">
+                <div class="bg-black-color color">
+                    <p style="font-size: 25px;" class="text-center">استخدم هذه الطريقة لحصول على التخصصات<br>
                         المناسبة بناءً على الفرع، والمعدل</p>
                     <form action="./questions.html">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">أختر الفرع</label>
-                            <!-- <input  class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="أختر الفرع"> -->
-
-                                <select class="custom-select" id="exampleInputEmail1">
-                                    <option disabled selected>--إختر الفرع--</option>
-                                    <option value="1">علمي</option>
-                                    <option value="2">أدبي</option>
-                                  </select>
+                           
+                        
+                            <select class="custom-select rounded-pill text-dark d-R" id="exampleInputEmail1">
+                                <option disabled selected>--إختر الفرع--</option>
+                                <option value="1">علمي</option>
+                                <option value="2">أدبي</option>
+                            </select>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">ادخل المعدل</label>
-                            <input type="number" class="form-control" id="exampleInputPassword1"
+                          
+                            <input type="number" min="50" max="100" class=" d-R form-control rounded-pill text-dark" id="exampleInputPassword1"
                                 placeholder="ادخل المعدل">
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn btn-primary">ارسل</button>
+                            <button type="submit" class=" btn-background btn btn-primary rounded-pill px-5 mt-3">ارسل</button>
 
                         </div>
 
@@ -51,6 +49,8 @@
             </div>
         </div>
     </div>
+
+    
 
 
 
